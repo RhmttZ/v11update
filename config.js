@@ -2,9 +2,9 @@ let fs = require('fs')
 let chalk = require('chalk')
 
 global.owner = [
-  ['6287898307350'],
-  ['6287898307350'],
-  ['6287898307350', 'Owner', true]
+  ['6285254337661'],
+  ['6285254337661'],
+  ['6285254337661', 'Owner', true]
   // [number, dia creator/owner?, dia developer?]
 ] // Put your number here
 global.mods = [] // Want some help?
@@ -58,7 +58,7 @@ fs.watchFile(file_exif, () => {
 // Sticker WM
 global.packname = sticker_name
 global.author = sticker_author
-global.wm = '© Gempy'
+global.wm = '© RhmttZ'
 
 global.multiplier = 1000 // The higher, The harder levelup
 
@@ -66,9 +66,9 @@ global.rpg = {
   emoticon(string) {
     string = string.toLowerCase()
     let emot = {
-      exp: '✉️',
+      exp: '✨',
       money: '💵',
-      potion: '🥤',
+      potion: '🧪',
       diamond: '💎',
       common: '📦',
       uncommon: '🎁',
@@ -76,7 +76,7 @@ global.rpg = {
       legendary: '🗃️',
       pet: '🎁',
       trash: '🗑',
-      armor: '🥼',
+      armor: '🛡️',
       sword: '⚔️',
       wood: '🪵',
       rock: '🪨',
@@ -86,9 +86,9 @@ global.rpg = {
       dog: '🐕',
       fox: '🦊',
       petFood: '🍖',
-      iron: '⛓️',
+      iron: '⛓️🔑',
       gold: '👑',
-      emerald: '💚'
+      emerald: '🎫
     }
     let results = Object.keys(emot).map(v => [v, new RegExp(v, 'gi')]).filter(v => v[1].test(string))
     if (!results.length) return ''
